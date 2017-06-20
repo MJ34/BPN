@@ -13,14 +13,14 @@ router.post('/send', function (req, res, next) {
         //service dan credenstial
         service: 'Gmail',
         auth: {
-            user: 'kasur.rusak404@gmail.com',
-            pass: '1631nz94'
+            user: 'xxxx@xxx.com',
+            pass: 'xxxxxxx'
         }
     });
     var mailOp = {
-        from: 'Bakti Putra Nusantara - <kasur.rusak404@gmail.com>',
-        to: 'putra.aji48.ap@gmail.com',
-        subject: 'Contact from kasur.rusak404@gmail.com',
+        from: 'Bakti Putra Nusantara - <xxxx@xxx.com>',
+        to: 'xxxx@xxx.com',
+        subject: 'Contact from xxxx@xxx.com',
         //plain text
         text:'kamu dapet pesan dari - User' + req.body.name + '@baktiputranusantara.com\n' + 'Email : ' + req.body.email + 'Message' + req.body.message,
         html: '<h3> You Have a New Message!</h3><br/><ul><li>From : '+ req.body.name + '@baktiputranusantara</li><li>' + 'Email : '+ req.body.email + '</li><li><p>' + req.body.message + '</p></li></ul>'
